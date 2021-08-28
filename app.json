@@ -1,0 +1,32 @@
+{
+  "name": "Saturn Music",
+  "description": "Saturn Music is a free 24/7 Discord music bot that delivers high-quality music to your Discord server.",
+  "repository": "https://github.com/",
+  "logo": "",
+  "keywords": ["node", "discord", "youtube","music","bot"],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": ""
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "TOKEN": {
+      "description": "The token copied in the first section.",
+      "value": "", 
+      "required": "true"
+    },
+    "PREFIX": {
+      "description": "The prfix you want to use with the bot.",
+      "value": ""
+    },
+    "SOUNDCLOUD_CLIENT_ID": {
+      "description": "The client id of soundcloud.",
+      "value": "dmDh7QSlmGpzH9qQoH1YExYCGcyYeYYC",
+      "required": "false"
+    }
+  }  
+}
